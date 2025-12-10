@@ -31,6 +31,7 @@
   align-items: center;
   margin-block: 100px;
   gap: 20px;
+  min-block-size: 365px;
 }
 
 .header__title {
@@ -81,6 +82,7 @@
   line-height: 100%;
 }
 
+
 .card__image-container {
   position: relative;
 }
@@ -120,6 +122,7 @@
   border-top: 2px solid var(--text-color);
   font-size: 18px;
   line-height: 21px;
+  gap:25px;
 }
 
 .card__like-buttons {
@@ -187,7 +190,7 @@
 .card__save-button {
   background: var(--bg-color);
   border: 2px solid var(--text-color);
-  padding: 18.5px 21px;
+  padding: 15px;
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
@@ -199,7 +202,7 @@
   align-items: center;
   justify-content: center;
   transition: box-shadow 0.3s ease;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 105px;
   gap: 8px;
   max-width: 335px;
@@ -318,14 +321,9 @@ dialog::backdrop {
   opacity: 0;
 }
 
-@media (376px <=width) {
+@media (width <= 375px ) {
   .header {
-    min-block-size: 327px;
-  }
-
-  .card__text {
-    word-spacing: -1.5px;
-    line-height: 115%;
+    height: 327px;
   }
 
   .card__content {
@@ -333,17 +331,30 @@ dialog::backdrop {
   }
 
   .card__title {
-    padding: 4px 10px 4px 10px;
+    padding: 4px 10px 6px 10px;
   }
 
-  .cards {
-    gap: 47px;
+  .card__like-button {
+    width: 128px;
   }
 
   .card__save-button {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
     padding: 10px;
   }
+
+  .save-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .like-icon:not(:hover) {
+    fill: var(--contour-color);
+    transition: fill 0.1s linear;
+  }
+
 }
+
