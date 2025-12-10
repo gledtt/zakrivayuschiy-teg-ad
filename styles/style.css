@@ -141,13 +141,8 @@
   align-items: center;
   justify-content: center;
   transition: border-color 0.3s ease;
-}
-
-.like-icon-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  height: 40px;
 }
 
 .card__icon-button:focus-visible {
@@ -171,12 +166,7 @@
   justify-content: center;
 }
 
-.card__icon-button {
-  box-sizing: border-box;
-  height: 40px;
-}
-
-.card__like-button .button__text, .dialog__button .button__text, .card__save-button .button__text, .save-icon{
+.card__like-button .button__text, .dialog__button .button__text, .card__save-button .button__text, .save-icon {
   position: relative;
   z-index: 1;
   color: var(--bg-color);
