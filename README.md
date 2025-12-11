@@ -1,1 +1,1 @@
-https://gledtt.github.io/zakrivayuschiy-teg-ad/
+https://github.com/gledtt/zakrivayuschiy-teg-ad
